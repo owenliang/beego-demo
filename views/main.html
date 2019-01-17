@@ -1,0 +1,7 @@
+{{template "header.html" .}}
+    {{if .user}}
+        欢迎你，{{.user.Name | htmlquote}}
+    {{else}}
+         您没有登录!
+    {{end}}
+{{template "footer.html" .}}
